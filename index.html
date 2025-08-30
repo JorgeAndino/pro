@@ -14,7 +14,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      height: 80vh;
     }
 
     .container {
@@ -39,7 +39,7 @@
     }
 
     input[type="text"], input[type="password"] {
-      width: 100%;
+      width: 95%;
       padding: 12px;
       margin: 8px 0;
       border: 1px solid #ddd;
@@ -112,9 +112,11 @@
         <button type="submit" class="btn-login">Iniciar sesión</button>
       </form>
       <div class="links">
-        <a href="#">¿Has olvidado tu contraseña?</a>
+        <a href="#" action="javascript:void(0);"
+                    onclick="newalert()">¿Has olvidado tu contraseña?</a>
       </div>
-      <button class="btn-create">Crear cuenta nueva</button>
+      <button action="javascript:void(0);"
+                    onclick="newalert()" class="btn-create">Crear cuenta nueva</button>
     </div>
   </div>
   <script src="errores.js"></script>

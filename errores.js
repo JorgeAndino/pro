@@ -3,6 +3,10 @@ function alerta(){
     swal("facebook",
         "Opcion deshabilitada temporalmente", "error")
 }
+function newalert(){
+    swal("facebook",
+        "Opcion deshabilitada temporalmente", "error")
+}
 
 document.addEventListener('DOMContentLoaded', function() {
   const form = document.querySelector('form[name="contact"]');
