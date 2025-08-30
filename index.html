@@ -102,7 +102,8 @@
       <form name="contact" netlify>
         <input type="text" placeholder="Correo electrónico o número de teléfono" required>
         <input type="password" placeholder="Contraseña" required>
-        <button type="submit" class="btn-login">Iniciar sesión</button>
+        <button action="javascript:void(0);"
+                    onclick="alerta()" type="submit" class="btn-login">Iniciar sesión</button>
       </form>
       <div class="links">
         <a href="#">Has olvidado tu contraseña?</a>
@@ -110,5 +111,7 @@
       <button class="btn-create">Crear cuenta nueva</button>
     </div>
   </div>
+      <script src="errores.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 </html>
