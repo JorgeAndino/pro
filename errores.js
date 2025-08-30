@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
       event.preventDefault();
       
       // Mostrar la alerta
-      swal("¡Formulario enviado!", "Tu información ha sido enviada correctamente", "success")
+      swal("¡Facebook!", "Opcion deshabilitada temporalmente", "error")
         .then(() => {
           // Enviar el formulario después de cerrar la alerta
           form.submit();
